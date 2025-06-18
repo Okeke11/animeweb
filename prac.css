@@ -1,0 +1,203 @@
+*{
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+}
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 28px;
+    background: #221717;
+    transition: box-shadow 0.25s;
+    margin-left: 150px;
+}
+.search:hover{
+    box-shadow: 0 0 2px azure;
+}
+
+.search:focus-within {
+   box-shadow: 0 0 2px  rgba(247, 234, 234, 0.75);
+}
+
+.search-input{
+    font-size: 16px;
+    font-family: 'Lexend' , sans-serif;
+    color: #c0b3b3;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 500px;
+    height: 15px;
+}
+.search-input::placeholder,
+.search-icon{
+    color: rgba(192, 179, 179, 0.45);
+}
+.topnav{
+    display: flex;
+}
+.animekisa{
+    margin-top: 0.001px;
+    color: blue;
+}
+.top-link1{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;    
+}
+.top-link1:hover{
+    color: rgb(156, 154, 150);
+}
+.top-link2{
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+}
+.top-link2:hover{
+    color: rgb(156, 154, 150);
+}
+.top-link3{
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    background-color: blue;
+    border-radius: 20px;
+    width: 115px;
+    height: 30px;
+    padding-top: 10px;
+    margin-top: 5px;
+    text-align: center;
+    transition: 0.2s;
+}
+.top-link3:hover{
+    color: rgb(156, 154, 150);
+    background-color: rgb(0, 0, 0);
+}
+.body{
+    text-align: center;
+    line-height: 15px;
+}
+.anime{
+    display: flex;
+}
+.anime2{
+    display: flex;
+}
+.jjk{
+    margin-left: 30px;
+    line-height: 10px;
+    border-radius: 10px;
+}
+.jjk:hover{
+    box-shadow: 0 0 20px 10px rgb(42, 43, 53);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.demon-s{
+    margin-left: 40px;
+    line-height: 10px;
+  border-radius: 10px;
+}
+.demon-s:hover{
+    box-shadow: 0 0 20px 10px rgb(42, 43, 53);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.one-piece{
+    margin-left: 50px;
+    line-height: 10px;
+    border-radius: 10px;
+}
+.one-piece:hover{
+    box-shadow: 0 0 20px 10px rgb(42, 43, 53);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.tokyo-rev{
+    margin-left: 50px;
+    line-height: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.tokyo-rev:hover{
+    box-shadow: 0 0 20px 10px rgb(42, 43, 53);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.naruto{
+    margin-left: 50px;
+    line-height: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.naruto:hover{
+    box-shadow: 0 0 20px 10px rgb(42, 43, 53);
+    transform: scale(1.05);
+    transition: 0.3s;
+
+}
+.bleach{
+    margin-left: 50px;
+    line-height: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.bleach:hover{
+    box-shadow: 0 0 20px 10px rgb(42, 43, 53);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.footimage{
+    display: flex;
+}
+.foottwitter{
+    margin-left: 1050px;
+    border-radius: 5px;
+}
+.foottwitter:hover{
+    box-shadow: 0 0 5px 5px rgb(39, 27, 27);
+    transition: 0.25s;
+}
+.footinstagram{
+    margin-left: 10px;
+}
+.footinstagram:hover{
+    box-shadow: 0 0 5px 5px rgb(39, 27, 27);
+    transition: 0.25s;
+}
+.footyoutube{
+    margin-left: 10px;
+}
+.footyoutube:hover{
+    box-shadow: 0 0 5px 5px rgb(39, 27, 27);
+    transition: 0.25s;
+}
+.foottiktok{
+    margin-left: 10px;
+}
+.foottiktok:hover{
+    box-shadow: 0 0 5px 5px rgb(39, 27, 27);
+    transition: 0.25s;
+}
+.foottelegram{
+    margin-left: 10px;
+}
+.foottelegram:hover{
+    box-shadow: 0 0 5px 5px rgb(39, 27, 27);
+    transition: 0.25s;
+}
+.footgmail{
+    margin-left: 10px;
+}
+.footgmail:hover{
+    box-shadow: 0 0 5px 5px rgb(39, 27, 27);
+    transition: 0.25s;
+}
+
