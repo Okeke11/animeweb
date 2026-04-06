@@ -203,23 +203,31 @@ hr {
 }
 
 .site-footer {
+    display: flex;
+    justify-content: space-between; /* Pushes copyright to left, icons to right */
+    align-items: center; /* Centers them vertically */
     padding: 0 5% 40px;
 }
 
-.footimage {
+.copyright p {
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.social-links {
     display: flex;
-    justify-content: center; /* Centers the icons automatically */
-    gap: 20px; /* Spaces them out perfectly */
+    gap: 20px; /* Spaces the icons apart */
 }
 
-/* Targets all footer links */
-.footimage a {
-    display: inline-block;
-    border-radius: 50%;
-    transition: transform 0.3s, filter 0.3s;
+/* Styling the Font Awesome icons */
+.social-links a {
+    color: var(--text-main);
+    font-size: 1.5rem; /* Acts just like font-size for text! */
+    transition: color 0.3s, transform 0.3s;
+    text-decoration: none;
 }
 
-.footimage a:hover {
-    transform: scale(1.2); /* Zooms in slightly on hover */
-    filter: drop-shadow(0 0 8px var(--accent-hover)); /* Gives a glowing effect */
+.social-links a:hover {
+    color: var(--accent-hover); /* Changes color to cyan on hover */
+    transform: translateY(-4px); /* Makes the icon "jump" up slightly */
 }

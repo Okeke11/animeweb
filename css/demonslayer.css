@@ -1,140 +1,118 @@
-*{
-    background-color: black;
-    color: rgb(110, 194, 194);
-    text-decoration: none;
+/* =========================================
+   BASE SETUP & VARIABLES (Matches Main Site)
+   ========================================= */
+:root {
+    --bg-color: #0b0c10;
+    --surface-color: #1f2833;
+    --accent-color: #45a29e;
+    --accent-hover: #66fcf1;
+    --text-main: #c5c6c7;
+    --text-light: #ffffff;
 }
 
-.episodes-of-s1{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px 5%;
+    text-align: center; /* Centers the headings and content */
+}
+
+/* =========================================
+   PAGE HEADERS & WARNING TEXT
+   ========================================= */
+h1 {
+    color: var(--text-light);
+    margin: 30px 0 20px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    display: inline-block;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+p {
+    color: #ff6b6b; /* Soft red for the "No Streaming!!!" warning */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   EPISODE CONTAINER
+   ========================================= */
+.episodes-of-s1 {
     display: flex;
-    text-decoration: none;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line if there are too many */
+    justify-content: center;
+    gap: 15px; /* Spaces the buttons out evenly */
+    max-width: 800px;
+    margin: 0 auto 50px auto; /* Centers the box on the page */
+    padding: 30px;
+    background-color: var(--surface-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
-.ep1{
-    margin-left: 30px;
+
+/* =========================================
+   EPISODE BUTTONS 
+   ========================================= */
+.ep-button {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
+    color: #000;
+    background-color: var(--accent-color); /* Changed to your teal accent color */
+    border-radius: 8px; /* Slightly sharper corners for a modern look */
+    width: 90px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
-.ep2{
-    margin-left: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
+
+.ep-button:hover {
+    background-color: var(--bg-color);
+    color: var(--accent-hover);
+    box-shadow: 0 0 12px var(--accent-hover);
+    transform: translateY(-3px); /* Makes the button jump up slightly when hovered */
 }
-.ep3{
-    margin-left: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+button {
+    background: transparent;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
-.ep4{
-    margin-left: 30px;
+
+button a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
+    color: var(--text-light);
+    background-color: #333;
+    padding: 12px 35px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s;
 }
-.ep5{
-    margin-left: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
-}
-.ep6{
-    margin-left: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
-}
-.ep7{
-    margin-left: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
-}
-.ep8{
-    margin-left: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
-}
-.ep9{
-    margin-left: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
-}
-.ep10{
-    margin-left: 30px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    background-color: blue;
-    border-radius: 13px;
-    width: 80px;
-    height: 25px;
-    padding-top: 10px;
-    margin-top: 5px;
-    text-align: center;
+
+button a:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    box-shadow: 0 0 15px var(--accent-color);
 }
